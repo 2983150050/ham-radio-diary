@@ -23,3 +23,9 @@
 **2. 初始化目录**
 
 `npm install`
+
+**3. 运行项目**
+
+`npm run dev`
+
+打开浏览器并访问：[http://localhost:5173/](http://localhost:5173/)
