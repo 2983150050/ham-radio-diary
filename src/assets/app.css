@@ -1,0 +1,343 @@
+
+
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'fz-ios';
+}
+
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* 为了在Electron中也隐藏滚动条，可以添加以下样式 */
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  min-width: 1050px;
+}
+
+.header {
+    width: 100vw;
+    background: #1e1e1e;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 998;
+}
+
+header {
+    width: 800px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background: #1e1e1e;
+  }
+  
+  .hd-left {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hd-left p {
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  .hd-left img {
+    width: 28px;
+    border-radius: 4px;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+  
+  .hd-right {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+
+  .hd-right p {
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-drag: none;
+    transform: translateX(-28px);
+  }
+
+  .addbox-title {
+    width: 780px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    margin-top: 100px;
+    position: sticky;
+    top: 50px;
+    z-index: 998;
+    background: #e6e6e682;
+    backdrop-filter: blur(10px);
+    padding: 0 0 0 30px;
+    transform: translateX(-15px);
+    border-bottom: solid 1px rgba(82, 82, 82, 0.22);
+}
+  
+  .addbox {
+    width: 754px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    margin-top: 20px;
+    transform: translateX(-2px);
+}
+
+.addinput-title {
+    width: 88%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.addinput-title p {
+    width: 100%;
+    justify-self: center;
+    align-items: center;
+    color: #1e1e1e;
+    font-size: 14px;
+}
+
+.addbutton-title {
+    width: 12%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addbutton-title p {
+    color: #1e1e1e;
+    font-size: 14px;
+}
+
+
+.addinput {
+    width: 88%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.addinput input {
+    width: 100%;
+    font-size: 14px;
+    color: #1e1e1e;
+    border: none;
+    outline: none;
+}
+
+.addbutton {
+    width: 12%;
+    height: 40px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.addbutton button {
+    width: 80%;
+    height: 30px;
+    background: #363636;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease 0s;
+}
+
+.addbutton button:hover {
+  background: #1e1e1e;
+}
+
+.addbutton p {
+  color: aliceblue;
+  font-size: 13px;
+  transform: translateY(-1px);
+}
+
+
+
+
+
+
+
+.addlist-title {
+  width: 754px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.addlist-title h1 {
+  font-size: 18px;
+  color: #1e1e1e;
+  transform: translateX(-2px);
+  user-select: none;
+}
+
+.addlist-title button {
+  background: none;
+  font-size: 14px;
+  margin-right: 32px;
+  color: #3e8cc4;
+  cursor: pointer;
+  user-select: none;
+}
+
+.addlist-title button:hover {
+  text-decoration: underline;
+}
+
+.addbox-list {
+  width: 754px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  margin-top: 5px;
+  transform: translateX(-2px);
+}
+
+.addinput-list {
+  width: 88%;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+}
+
+.addinput-list span {
+  width: 100%;
+  height: 45px;
+  display: grid;
+  justify-items: left;
+  align-items: center;
+  color: #363636;
+}
+
+.delbutton {
+  width: 12%;
+  height: 45px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.delbutton button {
+  width: 80%;
+  height: 30px;
+  background: #ececec;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease 0s;
+}
+
+.delbutton button:hover {
+background: rgb(222, 222, 222);
+}
+
+.delbutton p {
+color: #5e5e5e;
+font-size: 13px;
+transform: translateY(-1px);
+}
+
+
+
+
+footer {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.ft-box {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ebebeb9c;
+  backdrop-filter: blur(5px);
+  border-radius: 2vh;
+  transform: translateY(-15px);
+  box-shadow: 0 3px 6px #b3b3b32d;
+}
+
+.ft-box p {
+  font-size: 11px;
+  color: #1e1e1ecd;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+
+
+
+.inf {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-items: right;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+  z-index: 99;
+  background: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.inf button {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #363636b8;
+  font-size: 13px;
+  color: #ececec;
+  transform: translateY(-15px);
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+}
+
+.inf button:hover {
+  background: #363636;
+}
+
